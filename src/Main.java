@@ -9,7 +9,7 @@ public class Main {
         }
     }
 
-    public static void phoneVersion (int clientOS, int clientYear ) {
+    public static void setPhoneVersion (int clientOS, int clientYear ) {
         int currentYear = LocalDate.now().getYear();
         int ios = 0;
         int android = 1;
@@ -31,7 +31,7 @@ public class Main {
             }
     }
 
-    public static int totalDeliveryDays (int distance) {
+    public static int countDeliveryDays (int distance) {
         int deliveryDays = -1;
         int day = 0;
         if (distance <= 20){
@@ -67,13 +67,13 @@ public class Main {
     public static void task2() {
 
         System.out.println("ЗАДАЧА 2");
-        phoneVersion( 1, 2016);
+        setPhoneVersion( 1, 2016);
 
     }
     public static void task3() {
 
         System.out.println("ЗАДАЧА 3");
-        int deliveryDays = totalDeliveryDays(101);
+        int deliveryDays = countDeliveryDays(101);
         printDeliveryDays(deliveryDays);
     }
 }
